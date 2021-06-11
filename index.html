@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script/script.js" async></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="todolist">
+            <div class="todolist__title title"> My To-Do List</div>
+            <ul id="todolist" class="todolist__list list">
+
+            </ul>
+
+            <form action="#" class="todolist__adder adder">
+                <input id="todo" type="text" placeholder="Add New Todo" class="adder__todo">
+                <button id="btnAdd" class="adder__btn btn">add to-do</button>
+            </form>
+
+        </div>
+    </div>
+
+    <script id="taskTemplate" type="text/template">
+        <li class="list__item {{classDone}}" data-task-id="{{id}}">
+            {{task}}
+            <span>
+                <button class="delete-btn">X</button>
+            </span>
+        </li>
+    </script>
+</body>
+
+</html>
